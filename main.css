@@ -1,20 +1,42 @@
-body {
+* {
     padding:0;
     margin: 0;
 }
 
+
+#navigation-bar-container {
+    overflow: hidden;
+    background-color:black;
+
+}
 #navigation-bar {
-    clear:both;
-    display: block;
+    overflow:hidden;
+    display:block;
     list-style: none;
-    padding: 0;
+    margin: 15px 15px;
 
 }
  li {
-
+    display:block;
+    color:white;
     float: left;
+    margin: 0px 15px;
 
 }
 #main-image-container {
+    background-image: url(./background_image);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    height: 500px;
     clear: both;
+}
+
+#introduction {
+    height: 300px;
+}
+
+#introduction-title {
+    text-align: center;
 }
