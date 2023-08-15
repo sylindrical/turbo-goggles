@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Open+Sans:wght@300&display=swap');
+
 * {
     padding:0;
     margin: 0;
@@ -5,38 +7,58 @@
 
 
 #navigation-bar-container {
+    position: fixed;
+    width: 100%;
     overflow: hidden;
     background-color:black;
 
 }
 #navigation-bar {
     overflow:hidden;
-    display:block;
     list-style: none;
     margin: 15px 15px;
 
 }
- li {
+#menu-bar-logo {
+    float:left;
+    margin: 5px 10px;
+    filter: brightness(0) invert(1);
+    width:35px;
+    height: 35px;
+}
+
+li {
+
     display:block;
     color:white;
-    float: left;
+    float:left;
     margin: 0px 15px;
+
+
+    font-family: 'Open Sans', sans-serif;
 
 }
 #main-image-container {
-    background-image: url(./background_image);
+    background-image: url(./SBKjnxm-567232871.jpg);
     display:flex;
     justify-content: center;
     align-items: center;
-    background-size: cover;
+    background-size: 100% 100%;
     height: 500px;
     clear: both;
 }
+#main-image-container h1 {
+    font-family: 'Noto Sans JP';
+
+}
 
 #introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     height: 300px;
 }
 
 #introduction-title {
-    text-align: center;
 }
