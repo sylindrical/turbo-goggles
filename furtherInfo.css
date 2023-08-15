@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#photo1 {
+    grid-area: main;
+    border: 1px solid black;
+}
+#photo2 {
+    grid-area: main2;
+}
+/*
+#SpaceX {
+    grid-area: Innovation;
+}
+
+        <div id="SpaceX">
+            Rocket ship has landed onto mars thanks to SpaceX "Forn Teno" mission . There has been huge and considerable
+            progress in relation to finding more about how mars operates and what is the history behind this orange planet.
+            
+        </div>
+*/
+#begin {
+    grid-area: Introduction;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px solid black;
+}
+
+#info-box {
+    border: 1px solid red;
+    display:grid;
+    overflow: hidden;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+
+    grid-template-areas: "main main main"
+                        ". . Introduction"
+                        "main2 . ."
+                        ". . . ";
+}

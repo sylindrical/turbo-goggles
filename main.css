@@ -44,21 +44,31 @@ li {
     justify-content: center;
     align-items: center;
     background-size: 100% 100%;
-    height: 500px;
+    height: 100vh;
     clear: both;
 }
 #main-image-container h1 {
+    color:white;
     font-family: 'Noto Sans JP';
 
 }
 
 #introduction {
+    background-color: #303d6b;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    text-align: center;
     align-items: center;
     height: 300px;
 }
 
 #introduction-title {
+
+}
+#introduction > p {
+    align-items: center;
+
+    font-size: 2em;
+    top: 15px;
 }
